@@ -2,7 +2,7 @@ var concat = require('../')
 var test = require('tape')
 
 test('writing objects', function (t) {
-  var stream = concat({encoding: "objects"}, concatted)
+  var stream = concat({encoding: "object"}, concatted)
   function concatted(objs) {
     t.equal(objs.length, 2)
     t.deepEqual(objs[0], {"foo": "bar"})
